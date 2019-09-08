@@ -1,6 +1,7 @@
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
 driver = webdriver.Chrome()
-driver.get("https://www.nytimes.com")
-headlines = driver.find_elements_by_class_name("story-heading")
-for headline in headlines:
-    print(headline.text.strip())
+#searches url
+driver.get("http://www.python.org")
+driver.close()
